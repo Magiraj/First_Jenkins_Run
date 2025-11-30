@@ -38,7 +38,7 @@ public class Check_Box {
 
         catch(Exception e)
         {
-            throw new MegaException("Not element click");
+            throw new MegaException("Element Not element click properly");
         }
         if (ele.isSelected())
         {
