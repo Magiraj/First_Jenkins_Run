@@ -18,11 +18,11 @@ public class Check_Box {
     @Test
     public void checks() throws InterruptedException, MegaException {
         ChromeOptions options=new ChromeOptions();
-        options.addArguments("--start-maximized");
+        //options.addArguments("--start-maximized");
         //options.addArguments("--headless=new");
         ChromeDriver driver=new ChromeDriver(options);
         driver.get("https://leafground.com/checkbox.xhtml");
-       // driver.manage().window().maximize();
+        driver.manage().window().maximize();
         //driver.manage().window().fullscreen();
         Thread.sleep(4000);
      WebElement ele= driver.findElement(By.xpath("(//div[contains(@class, 'ui-chkbox-box ui-widget ui-corner')])[1]/span"));
