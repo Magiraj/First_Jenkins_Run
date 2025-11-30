@@ -30,7 +30,7 @@ public class Check_Box {
 
         //Explicit
         try {
-          //  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
            // wait.until(ExpectedConditions.elementToBeClickable(ele)).click();
             JavascriptExecutor js= (JavascriptExecutor) driver;
             js.executeScript("arguments[0].click();", ele);
@@ -38,7 +38,7 @@ public class Check_Box {
 
         catch(Exception e)
         {
-            throw new MegaException("Element Not element click properly");
+            throw new MegaException("Element Not element click properly. Please check EveryThing");
         }
         if (ele.isSelected())
         {
